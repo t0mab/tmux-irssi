@@ -1,0 +1,10 @@
+[Unit]
+Description=Run IRSSI in a Tmux session
+After=NetworkManager.service syslog.target auditd.service
+[Service]
+Type=forking
+User=ADD_YOUR_USERNAME_HERE
+Group=ADD_YOUR_USERGROUP_HERE
+ExecStart=/PATH/TO/SCRIPT/tmux_irssi_nicklist.sh
+[Install]
+WantedBy=multi-user.target
