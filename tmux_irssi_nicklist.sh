@@ -24,10 +24,10 @@ irssi_repair() {
 }
 
 if [ -z "$T3" ]; then
-    tmux new-session -d -s main;
-    tmux new-window -t main -n irssi irssi;
+    tmux new-session -d -s irc;
+    tmux new-window -t irc -n irssi irssi;
     irssi_nickpane ;
 fi
-    tmux attach-session -d -t main;
+    tmux attach-session -d -t irc;
     irssi_repair ;
 exit 0
