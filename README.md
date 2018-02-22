@@ -10,3 +10,9 @@ To install as a systemd service
 
 $ sudo cp archlinux/tmuxirssi.service /usr/lib/systemd/system/
 $ sudo systemctl enable tmuxirssi
+
+or 
+
+$ cp archlinux/tmuxirssi.service ~/.config/systemd/user/
+$ sudo systemctl enable tmuxirssi
+
